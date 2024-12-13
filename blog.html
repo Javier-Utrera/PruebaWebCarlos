@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Indice</title>
+</head>
+
+<body class="bg-gray-400 text-black">
+
+    <!-- Header -->
+    <header class="bg-[#E6C47A] text-white py-6 px-4 w-full">
+        <div class="flex items-center justify-between w-full space-x-4">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <img src="/imagenes/logo.svg" alt="Logo Tierra Media" class="w-[70px] h-auto">
+            </div>
+            <!-- Formulario -->
+            <form class="flex flex-col w-full space-y-4 mt-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                <input type="text" placeholder="Destino" class="p-2 rounded bg-white text-black w-full" />
+                <input type="text" placeholder="Fecha" class="p-2 rounded bg-white text-black w-full" />
+                <input type="text" placeholder="Número de personas" class="p-2 rounded bg-white text-black w-full" />
+                <button type="submit" class="p-2 bg-[#4682A3] text-white rounded w-full sm:w-auto">Comenzar viaje</button>
+            </form>            
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-[#4B3D26] text-[#EFEDE8] py-4 px-4 w-full">
+        <div class="flex justify-between items-center w-full">
+          <!-- Enlaces de navegación -->
+          <ul class="flex space-x-8">
+            <li><a href="index.html" class="hover:text-yellow-300" style="color: red; font-weight: bold;">Inicio</a></li>
+            <li><a href="blog.html" class="hover:text-yellow-300" style="color: red; font-weight: bold;">Blog</a></li>
+            <li><a href="#destinos" class="hover:text-yellow-300">Quienes somos</a></li>
+            <li><a href="#paquetes" class="hover:text-yellow-300">Contacto</a></li>
+            <li><a href="tienda.html" class="hover:text-yellow-300" style="color: red; font-weight: bold;">Tienda</a></li>
+          </ul>
+      
+          <!-- Barra de búsqueda -->
+          <div class="ml-4 w-1/2">
+            <input type="search" placeholder="Buscar..." class="w-full p-2 rounded bg-white text-black">
+          </div>
+        </div>
+      </nav>
+
+    <!-- Landing Section -->
+    <section class="w-full h-[500px] bg-cover bg-center relative" style="background-image: url('/imagenes/ba.jpg');">
+        <div class="flex items-center justify-center w-full h-full">
+            <div class="bg-white p-8 rounded-lg max-w-xl text-center">
+                <h2 class="text-3xl font-semibold text-green-800 mb-4">Descubre el Mundo de la Tierra Media</h2>
+                <p class="text-lg text-gray-700">Prepárate para vivir aventuras inolvidables, explorar paisajes únicos y
+                    sumergirte en la magia de la Tierra Media. ¡Haz realidad tus sueños de viajero!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="bg-gray-100 py-8 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Últimos Artículos -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Aquí irán los posts -->
+            
+                <article class="bg-white p-4 rounded-lg shadow-lg flex">
+                    <div class="flex-1 pr-4">
+                        <h2 class="text-2xl font-bold mb-2">La Comarca: Un viaje a la tierra de la paz</h2>
+                        <p class="text-sm text-gray-700 mb-4">Descubre el hogar de los Hobbits, un lugar donde la naturaleza y la tranquilidad reinan.</p>
+                        <div class="text-gray-500 text-xs">
+                            <p>Publicado el <span class="font-bold">10 de Enero</span> por <a href="autor.html" class="text-red-500 hover:underline">Gandalf</a></p>
+                        </div>
+                        <a href="entrada.html" class="text-red-500 hover:underline">Leer más...</a>
+                    </div>
+                    <div class="w-32 h-32 overflow-hidden rounded-lg">
+                        <img src="/imagenes/blog_comarca.webp" alt="Imagen destacada" class="w-full h-full object-cover">
+                    </div>
+                </article>
+                
+                <article class="bg-white p-4 rounded-lg shadow-lg flex">
+                    <div class="flex-1 pr-4">
+                        <h2 class="text-2xl font-bold mb-2">Rivendel: El refugio élfico</h2>
+                        <p class="text-sm text-gray-700 mb-4">Un lugar lleno de sabiduría y belleza, donde los Elfos protegen sus secretos más antiguos.</p>
+                        <div class="text-gray-500 text-xs">
+                            <p>Publicado el <span class="font-bold">15 de Febrero</span> por <span class="font-bold">Aragorn</span></p>
+                        </div>
+                        <a href="entrada.html" class="text-red-500 hover:underline">Leer más...</a>
+                    </div>
+                    <div class="w-32 h-32 overflow-hidden rounded-lg">
+                        <img src="/imagenes/blog_rivendell.webp" alt="Imagen destacada" class="w-full h-full object-cover">
+                    </div>
+                </article>
+                
+                <article class="bg-white p-4 rounded-lg shadow-lg flex">
+                    <div class="flex-1 pr-4">
+                        <h2 class="text-2xl font-bold mb-2">Mordor: El reino oscuro</h2>
+                        <p class="text-sm text-gray-700 mb-4">Adéntrate en las tierras oscuras de Sauron, un lugar donde el mal crece y se esconde en las sombras.</p>
+                        <div class="text-gray-500 text-xs">
+                            <p>Publicado el <span class="font-bold">22 de Marzo</span> por <span class="font-bold">Gollum</span></p>
+                        </div>
+                        <a href="entrada.html" class="text-red-500 hover:underline">Leer más...</a>
+                    </div>
+                    <div class="w-32 h-32 overflow-hidden rounded-lg">
+                        <img src="/imagenes/blog_mordor.webp" alt="Imagen destacada" class="w-full h-full object-cover">
+                    </div>
+                </article>
+                
+                <article class="bg-white p-4 rounded-lg shadow-lg flex">
+                    <div class="flex-1 pr-4">
+                        <h2 class="text-2xl font-bold mb-2">Gondor: La última línea de defensa</h2>
+                        <p class="text-sm text-gray-700 mb-4">Una antigua ciudad que resiste el paso del tiempo, su historia está marcada por la valentía y la lucha.</p>
+                        <div class="text-gray-500 text-xs">
+                            <p>Publicado el <span class="font-bold">5 de Abril</span> por <span class="font-bold">Gimli</span></p>
+                        </div>
+                        <a href="entrada.html" class="text-red-500 hover:underline">Leer más...</a>
+                    </div>
+                    <div class="w-32 h-32 overflow-hidden rounded-lg">
+                        <img src="imagenes/blog_gondor.webp" alt="Imagen destacada" class="w-full h-full object-cover">
+                    </div>
+                </article>
+                                
+
+                <!-- Repetir artículos según sea necesario -->
+            </div>
+
+            <!-- Destacados de la Semana -->
+            <div class="lg:col-span-1 space-y-8">
+                <div class="bg-[#E6C47A] p-4 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">Rutas Épicas en la Tierra Media</h3>
+                    <p class="text-sm text-gray-700">Descubre las rutas más icónicas de la Tierra Media, desde las Montañas Nubladas hasta la Comarca.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Leer más...</a>
+                </div>
+                <div class="bg-[#E6C47A] p-4 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">Visitando los Reinos de la Tierra Media</h3>
+                    <p class="text-sm text-gray-700">Explora los reinos de Rohan y Gondor, cuna de grandes batallas y héroes legendarios.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Leer más...</a>
+                </div>
+                <div class="bg-[#E6C47A] p-4 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">Aventuras en los Bosques de la Tierra Media</h3>
+                    <p class="text-sm text-gray-700">Sumérgete en los bosques de Lothlórien y Fangorn, donde la magia y los secretos de la naturaleza esperan.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Leer más...</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#4B3D26] text-[#EFEDE8] py-6">
+        <div class="max-w-screen-xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Categorías y Etiquetas -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Categorías</h3>
+                <ul>
+                    <li><a href="#" class="hover:text-yellow-500">Viajes</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Aventuras</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Historia</a></li>
+                </ul>
+            </div>
+
+            <!-- Información de Contacto -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Contacto</h3>
+                <p>Email: contacto@tierramedia.com</p>
+                <p>Teléfono: +123 456 789</p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Síguenos</h3>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="hover:text-yellow-500">Facebook</a>
+                    <a href="#" class="hover:text-yellow-500">Instagram</a>
+                    <a href="#" class="hover:text-yellow-500">Twitter</a>
+                </div>
+            </div>
+
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31563.41284989709!2d168.6611577493684!3d-45.03169127301488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d2f3468e495b1%3A0xb9fdf0730c472d3b!2sQueenstown%2C%20New%20Zealand!5e0!3m2!1sen!2s!4v1638479199163!5m2!1sen!2s"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+            <!-- Aviso de Copyright -->
+            <div class="col-span-1 sm:col-span-2 lg:col-span-4 text-center text-sm">
+                <p>&copy; 2024 Tierra Media. Todos los derechos reservados.</p>
+            </div>
+
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

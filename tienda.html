@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+    <link href="css.css" rel="stylesheet">
+    <title>Index</title>
+</head>
+
+<body>
+    <header class="bg-dorado text-white">
+        <div class="container-fluid py-3">
+            <div class="row align-items-center">
+                <!-- Logo ocupa 1 columna -->
+                <div id="logo" class="col-1 d-flex justify-content-center align-items-center" style="max-width: 100px;">
+                    <img src="imagenes/logo.svg" alt="Logo" class="img-fluid">
+                </div>
+
+                <!-- Buscador ocupa 11 columnas -->
+                <div id="buscador" class="col-11">
+                    <div class="d-flex align-items-center">
+                        <!-- Select de categorías -->
+                        <div class="me-3 flex-grow-1">
+                            <select class="form-select form-select-lg" id="categoria"
+                                aria-label="Seleccionar categoría">
+                                <option value="" selected>Seleccionar categoría</option>
+                                <option value="ropa">Ropa</option>
+                                <option value="electrodomesticos">Electrodomésticos</option>
+                                <option value="juguetes">Juguetes</option>
+                                <option value="libros">Libros</option>
+                            </select>
+                        </div>
+                        <!-- Input de búsqueda -->
+                        <div class="me-3 flex-grow-1">
+                            <input type="text" class="form-control form-control-lg" placeholder="Buscar productos..."
+                                id="buscar" aria-label="Buscar producto">
+                        </div>
+                        <!-- Botón de búsqueda -->
+                        <button type="submit" class="btn btn-primary ms-2">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tierra Media</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" style="color: red; font-weight: bold;">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html"style="color: red; font-weight: bold;">Blog</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="viajesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Viajes</a>
+                        <ul class="dropdown-menu" aria-labelledby="viajesDropdown">
+                            <li><a class="dropdown-item" href="#">Destinos</a></li>
+                            <li><a class="dropdown-item" href="#">Consejos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="mapaDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Mapa</a>
+                        <ul class="dropdown-menu" aria-labelledby="mapaDropdown">
+                            <li><a class="dropdown-item" href="#">Destinos</a></li>
+                            <li><a class="dropdown-item" href="#">Consejos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="tiendaDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: red; font-weight: bold;">Tienda</a>
+                        <ul class="dropdown-menu" aria-labelledby="tiendaDropdown">
+                            <li><a class="dropdown-item" href="tienda.html" style="color: red; font-weight: bold;">Tienda</a></li>
+                            <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                            <li><a class="dropdown-item" href="#">Categorías</a></li>
+                            <li><a class="dropdown-item" href="#">Destacados</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#"><i
+                                class="material-symbols-rounded">account_circle</i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i
+                                class="material-symbols-rounded">shopping_cart</i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i
+                                class="material-symbols-rounded">translate</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="landing-banner" class="position-relative">
+        <!-- Imagen de fondo -->
+        <div class="bg-image"
+            style="background-image: url('imagenes/landing.jpg'); height: 500px; background-size: cover; background-position: center;">
+            <!-- Superposición con contenido -->
+            <div class="d-flex align-items-center justify-content-center text-center text-white"
+                style="background-color: rgba(0, 0, 0, 0.5); height: 100%;">
+                <div>
+                    <!-- Texto principal -->
+                    <h1 class="display-4 fw-bold mb-3">Bienvenidos a la Tierra Media</h1>
+                    <p class="lead mb-4">Descubre nuestras promociones y productos destacados para comenzar tu aventura.
+                    </p>
+                    <!-- Botones de acción -->
+                    <div>
+                        <a href="#categorias" class="btn btn-primary btn-lg me-3">Explorar Categorías</a>
+                        <a href="#productos" class="btn btn-outline-light btn-lg">Ver Productos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid py-5">
+        <div class="row">
+            <!-- Barra lateral izquierda (filtros) -->
+            <div class="col-md-2">
+                <div class="card shadow-sm position-sticky" style="top: 20px;">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold text-primary mb-4">Filtrar Artículos</h5>
+    
+                        <!-- Filtro de Categorías -->
+                        <div class="mb-4">
+                            <h6 class="fw-bold">Categorías</h6>
+                            <ul class="list-unstyled">
+                                <li><input class="form-check-input" type="checkbox" value="" id="categoria1"> <label
+                                        for="categoria1" class="ms-2">Armaduras</label></li>
+                                <li><input class="form-check-input" type="checkbox" value="" id="categoria2"> <label
+                                        for="categoria2" class="ms-2">Pociones</label></li>
+                                <li><input class="form-check-input" type="checkbox" value="" id="categoria3"> <label
+                                        for="categoria3" class="ms-2">Arcos y Flechas</label></li>
+                                <li><input class="form-check-input" type="checkbox" value="" id="categoria4"> <label
+                                        for="categoria4" class="ms-2">Hierbas Curativas</label></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Filtro de Precio -->
+                        <div class="mb-4">
+                            <h6 class="fw-bold">Precio</h6>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="min-price" class="form-label">Desde</label>
+                                    <input type="number" class="form-control" id="min-price" placeholder="Mínimo">
+                                </div>
+                                <div class="col-6">
+                                    <label for="max-price" class="form-label">Hasta</label>
+                                    <input type="number" class="form-control" id="max-price" placeholder="Máximo">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Filtro de Valoraciones -->
+                        <div class="mb-4">
+                            <h6 class="fw-bold">Valoración</h6>
+                            <ul class="list-unstyled">
+                                <li><input class="form-check-input" type="checkbox" value="" id="rating1"> <label
+                                        for="rating1" class="ms-2">4 estrellas o más</label></li>
+                                <li><input class="form-check-input" type="checkbox" value="" id="rating2"> <label
+                                        for="rating2" class="ms-2">3 estrellas o más</label></li>
+                                <li><input class="form-check-input" type="checkbox" value="" id="rating3"> <label
+                                        for="rating3" class="ms-2">2 estrellas o más</label></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Filtro por Color -->
+                        <div class="mb-4">
+                            <h6 class="fw-bold">Color</h6>
+                            <ul class="list-unstyled">
+                                <li><input class="form-check-input" type="checkbox" value="" id="color1"> <label
+                                        for="color1" class="ms-2">Verde</label></li>
+                                <li><input class="form-check-input" type="checkbox" value="" id="color2"> <label
+                                        for="color2" class="ms-2">Negro</label></li>
+                                <li><input class="form-check-input" type="checkbox" value="" id="color3"> <label
+                                        for="color3" class="ms-2">Marrón</label></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Filtro de Marca -->
+                        <div class="mb-4">
+                            <h6 class="fw-bold">Forja</h6>
+                            <ul class="list-unstyled">
+                                <li><input class="form-check-input" type="checkbox" value="" id="brand1"> <label
+                                        for="brand1" class="ms-2">Forja de Gondor</label></li>
+                                <li><input class="form-check-input" type="checkbox" value="" id="brand2"> <label
+                                        for="brand2" class="ms-2">Forja de Moria</label></li>
+                                <li><input class="form-check-input" type="checkbox" value="" id="brand3"> <label
+                                        for="brand3" class="ms-2">Elfos de Rivendel</label></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Botón para aplicar los filtros -->
+                        <button class="btn btn-primary w-100">Aplicar filtros</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Div 1: Categorías -->
+            <div class="col-md-8">
+                <div class="mb-5">
+                    <h3 class="mb-4 text-center text-uppercase fw-bold">Categorías</h3>
+                    <div class="row g-4 justify-content-center">
+                        <!-- Card 1 -->
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="card shadow-lg h-100 rounded" style="aspect-ratio: 2/3; max-width: 250px;">
+                                <img src="imagenes/armadura.jpg" class="card-img-top rounded-top" alt="Armaduras">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Armaduras</h5>
+                                    <p class="card-text text-muted">Ideal para protegerte de los ataques de orcos y
+                                        trolles.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="card shadow-lg h-100 rounded" style="aspect-ratio: 2/3; max-width: 250px">
+                                <img src="imagenes/potion.webp" class="card-img-top rounded-top" alt="Pociones">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Pociones</h5>
+                                    <p class="card-text text-muted">Una poción mágica creada por los elfos, que sana las
+                                        heridas de manera rápida y eficaz.</p>
+                                    <a href="#" class="btn btn-primary btn-sm">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="card shadow-lg h-100 rounded" style="aspect-ratio: 2/3; max-width: 250px">
+                                <img src="imagenes/arco.jpg" class="card-img-top rounded-top" alt="Arcos">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Arcos </h5>
+                                    <p class="card-text text-muted">Hecho por los elfos de Mirkwood</p>
+                                    <a href="#" class="btn btn-primary btn-sm">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Div 2: Productos -->
+                <div>
+                    <h3 class="mb-4 text-center text-uppercase fw-bold">Productos Destacados</h3>
+                    <div class="row g-5 justify-content-center">
+                        <!-- Producto 1 -->
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="card shadow-sm h-100 rounded position-relative" style="aspect-ratio: 2/3; max-width: 230px;">
+                                <a href="producto.html" class="stretched-link text-decoration-none">
+                                    <!-- Imagen -->
+                                    <img src="imagenes/espadaelfica.webp" class="card-img-top rounded-top" alt="Espada Élfica"
+                                        style="height: 150%; filter: sepia(1) hue-rotate(-50deg) saturate(5);">
+                                    <!-- Cuadro de texto -->
+                                    <div class="card-img-overlay d-flex flex-column justify-content-end bg-black bg-opacity-10 text-white rounded-bottom">
+                                        <h5 class="fw-bold text-center mb-1">Espada Elfica de Rivendel</h5>
+                                        <p class="text-center text-warning fw-bold mb-3">5000 Monedas de Mithril</p>
+                                        <div class="text-center">
+                                            <button class="btn btn-outline-light btn-sm">Añadir al carrito</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <!-- Producto 2 -->
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="card shadow-sm h-100 rounded position-relative"
+                                style="aspect-ratio: 2/3; max-width: 230px;">
+                                <!-- Imagen -->
+                                <img src="imagenes/escudogondor.webp" class="card-img-top rounded-top"
+                                    alt="Escudo de Gondor" style="object-fit: cover; width: 100%; height: 100%;">
+                                <!-- Cuadro de texto  -->
+                                <div class="card-img-overlay d-flex flex-column justify-content-end bg-black 
+                                        bg-opacity-10 text-white rounded-bottom">
+                                    <h5 class="fw-bold text-center mb-1">Escudo de Gondor</h5>
+                                    <p class="text-center text-warning fw-bold mb-3">3500 Monedas de Mithril</p>
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-outline-light btn-sm">Añadir al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Producto 3 -->
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="card shadow-sm h-100 rounded position-relative"
+                                style="aspect-ratio: 2/3; max-width: 230px;">
+                                <!-- Imagen -->
+                                <img src="imagenes/pocioncurativa.webp" class="card-img-top rounded-top"
+                                    alt="Poción Curativa" style="object-fit: cover; width: 100%; height: 100%;">
+                                <!-- Cuadro de texto -->
+                                <div class="card-img-overlay d-flex flex-column justify-content-end bg-black 
+                                        bg-opacity-10 text-white rounded-bottom">
+                                    <h5 class="fw-bold text-center mb-1">Poción Curativa Elfica</h5>
+                                    <p class="text-center text-warning fw-bold mb-3">150 Monedas de Mithril</p>
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-outline-light btn-sm">Añadir al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Producto 4 -->
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="card shadow-sm h-100 rounded position-relative"
+                                style="aspect-ratio: 2/3; max-width: 230px;">
+                                <!-- Imagen -->
+                                <img src="imagenes/arco.jpg" class="card-img-top rounded-top"
+                                    alt="Arco de Mirkwood" style="object-fit: cover; width: 100%; height: 100%;">
+                                <!-- Cuadro de texto -->
+                                <div class="card-img-overlay d-flex flex-column justify-content-end 
+                                        bg-black bg-opacity-10 text-white rounded-bottom">
+                                    <h5 class="fw-bold text-center mb-1">Arco de Mirkwood</h5>
+                                    <p class="text-center text-warning fw-bold mb-3">2200 Monedas de Mithril</p>
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-outline-light btn-sm">Añadir al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Producto 5 -->
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="card shadow-sm h-100 rounded position-relative"
+                                style="aspect-ratio: 2/3; max-width: 230px;">
+                                <!-- Imagen -->
+                                <img src="imagenes/armadura.jpg" class="card-img-top rounded-top"
+                                    alt="Armadura de Gondor" style="object-fit: cover; width: 100%; height: 100%;">
+                                <!-- Cuadro de texto -->
+                                <div class="card-img-overlay d-flex flex-column justify-content-end
+                                         bg-black bg-opacity-10 text-white rounded-bottom">
+                                    <h5 class="fw-bold text-center mb-1">Armadura de Gondor</h5>
+                                    <p class="text-center text-warning fw-bold mb-3">4500 Monedas de Mithril</p>
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-outline-light btn-sm">Añadir al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Producto 6 -->
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="card shadow-sm h-100 rounded position-relative"
+                                style="aspect-ratio: 2/3; max-width: 230px;">
+                                <!-- Imagen -->
+                                <img src="imagenes/daga.jpg" class="card-img-top rounded-top" alt="Daga de Ladrón"
+                                    style="object-fit: cover; width: 100%; height: 100%;">
+                                <!-- Cuadro de texto -->
+                                <div class="card-img-overlay d-flex flex-column justify-content-end 
+                                        bg-black bg-opacity-10 text-white rounded-bottom">
+                                    <h5 class="fw-bold text-center mb-1">Daga de Ladrón</h5>
+                                    <p class="text-center text-warning fw-bold mb-3">900 Monedas de Mithril</p>
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-outline-light btn-sm">Añadir al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Producto 7 -->
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="card shadow-sm h-100 rounded position-relative"
+                                style="aspect-ratio: 2/3; max-width: 230px;">
+                                <!-- Imagen -->
+                                <img src="imagenes/casco.jpg" class="card-img-top rounded-top" alt="Casco de Helm"
+                                    style="object-fit: cover; width: 100%; height: 100%;">
+                                <!-- Cuadro de texto -->
+                                <div class="card-img-overlay d-flex flex-column justify-content-end 
+                                        bg-black bg-opacity-10 text-white rounded-bottom">
+                                    <h5 class="fw-bold text-center mb-1">Casco de Helm</h5>
+                                    <p class="text-center text-warning fw-bold mb-3">1800 Monedas de Mithril</p>
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-outline-light btn-sm">Añadir al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Producto 8 -->
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="card shadow-sm h-100 rounded position-relative"
+                                style="aspect-ratio: 2/3; max-width: 230px;">
+                                <!-- Imagen -->
+                                <img src="imagenes/lanza.jpg" class="card-img-top rounded-top"
+                                    alt="Lanza de Boromir" style="object-fit: cover; width: 100%; height: 100%;">
+                                <!-- Cuadro de texto -->
+                                <div class="card-img-overlay d-flex flex-column justify-content-end 
+                                        bg-black bg-opacity-10 text-white rounded-bottom">
+                                    <h5 class="fw-bold text-center mb-1">Lanza de Boromir</h5>
+                                    <p class="text-center text-warning fw-bold mb-3">3000 Monedas de Mithril</p>
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-outline-light btn-sm">Añadir al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Producto 9 -->
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="card shadow-sm h-100 rounded position-relative"
+                                style="aspect-ratio: 2/3; max-width: 230px;">
+                                <!-- Imagen -->
+                                <img src="imagenes/manto.jpg" class="card-img-top rounded-top"
+                                    alt="Manto Invisible" style="object-fit: cover; width: 100%; height: 100%;">
+                                <!-- Cuadro de texto -->
+                                <div class="card-img-overlay d-flex flex-column justify-content-end 
+                                        bg-black bg-opacity-10 text-white rounded-bottom">
+                                    <h5 class="fw-bold text-center mb-1">Manto Invisible</h5>
+                                    <p class="text-center text-warning fw-bold mb-3">8000 Monedas de Mithril</p>
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-outline-light btn-sm">Añadir al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Producto 10 -->
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="card shadow-sm h-100 rounded position-relative"
+                                style="aspect-ratio: 2/3; max-width: 230px;">
+                                <!-- Imagen -->
+                                <img src="imagenes/libro.webp" class="card-img-top rounded-top"
+                                    alt="Libro de Sabiduría" style="object-fit: cover; width: 100%; height: 100%;">
+                                <!-- Cuadro de texto -->
+                                <div class="card-img-overlay d-flex flex-column justify-content-end 
+                                    bg-black bg-opacity-10 text-white rounded-bottom">
+                                    <h5 class="fw-bold text-center mb-1">Libro de Sabiduría</h5>
+                                    <p class="text-center text-warning fw-bold mb-3">1200 Monedas de Mithril</p>
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-outline-light btn-sm">Añadir al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Fin Div Categorías y Productos -->
+    
+            <!-- Barra lateral derecha (Carrito) -->
+            <div class="col-md-2">
+                <div class="card shadow-lg position-sticky" style="top: 20px;">
+                    <div class="card-body p-4" style="background-color: #f8f9fa; color: #333;">
+                        <h5 class="fw-bold text-center mb-4" style="color: #2c3e50;">Tu Carrito</h5>
+            
+                        <!-- Lista de productos en el carrito -->
+                        <div id="productos-en-carrito" class="mb-4">
+                            <!-- Producto 1 -->
+                            <div class="border-bottom py-2">
+                                <p class="fw-bold mb-1">Espada Elfica de Rivendel</p>
+                                <p class="fw-bold text-warning mb-0" style="color: #f39c12;">5000 Monedas</p>
+                            </div>
+                            <!-- Producto 2 -->
+                            <div class="border-bottom py-2">
+                                <p class="fw-bold mb-1">Manto de Invisibilidad</p>
+                                <p class="fw-bold text-warning mb-0" style="color: #f39c12;">1500 Monedas</p>
+                            </div>
+                            <!-- Producto 3 -->
+                            <div class="border-bottom py-2">
+                                <p class="fw-bold mb-1">Poción de Curación Elfica</p>
+                                <p class="fw-bold text-warning mb-0" style="color: #f39c12;">250 Monedas</p>
+                            </div>
+                        </div>
+            
+                        <!-- Total del carrito -->
+                        <div id="total-carrito" class="d-flex justify-content-between align-items-center mb-4 py-2 border-top border-bottom" style="border-color: #e1e1e1;">
+                            <p class="fw-bold text-warning" id="total-precio" style="color: #f39c12;">6750 Monedas</p>
+                        </div>
+            
+                        <!-- Botón para ir a la caja -->
+                        <a href="pago.html" class="btn btn-primary w-100 text-white fw-bold" style="background-color: #b92935d0; border-color: #b929605d;">Tramitar pedido</a>
+
+                    </div>
+                </div>
+            </div> <!-- Fin Barra lateral derecha -->
+        </div> <!-- Fin row -->
+    </section>
+
+    <footer class="bg-marron text-crema py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contacto -->
+                <div class="col-md-6 mb-4">
+                    <h2>Contáctanos</h2>
+                    <p>¿Tienes preguntas sobre nuestras aventuras en la Tierra Media? ¡Estamos aquí para ayudarte a
+                        planificar tu travesía!</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Escribe tu mensaje..." rows="4"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                    <div class="mt-3">
+                        <h5>Información de Contacto</h5>
+                        <p>Email: info@tierramediaaventuras.com</p>
+                        <p>Teléfono: +123 456 7890</p>
+                    </div>
+                    <p>&copy; 2024 Tierra Media. Todos los derechos reservados.</p>
+                    <p>
+                        <a href="#" class="text-white">Política de privacidad</a> |
+                        <a href="#" class="text-white">Términos y condiciones</a>
+                    </p>
+                </div>
+
+                <!-- Mapa -->
+                <div class="col-md-6">
+                    <h3>Nuestras Oficinas en Nueva Zelanda</h3>
+                    <p>Visita nuestras oficinas en locaciones inspiradas en la Tierra Media para iniciar tu aventura.
+                    </p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31563.41284989709!2d168.6611577493684!3d-45.03169127301488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d2f3468e495b1%3A0xb9fdf0730c472d3b!2sQueenstown%2C%20New%20Zealand!5e0!3m2!1sen!2s!4v1638479199163!5m2!1sen!2s"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

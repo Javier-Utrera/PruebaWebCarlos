@@ -1,0 +1,30 @@
+header {
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-areas: "logo buscador";
+    background-image: url(../imagenes/maptexture1.svg);
+    background-size: contain;
+    background-color: #E6C47A;
+    background-blend-mode: color-dodge;
+    border-bottom: 1px solid #A7A8AA;
+}
+
+#logo {
+    grid-area: logo;
+    background-image: url(../imagenes/logo.svg);
+    background-size: 60%;
+    max-width: 120px;
+    min-width: 70px;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+#buscador {
+    grid-area: buscador;
+    display: grid;
+    grid-template:
+        "origen destino viajeros raza botoncomenzar"
+        / 3fr 3fr 3fr 2fr 1fr;
+    align-items: center;
+    padding: 0 10px;
+}

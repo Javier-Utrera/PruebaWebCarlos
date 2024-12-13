@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+    <link href="css.css" rel="stylesheet">
+    <title>Index</title>
+</head>
+
+<body>
+    <header class="bg-dorado text-white">
+        <div class="container-fluid py-3">
+            <div class="row align-items-center">
+                <!-- Logo ocupa 1 columna -->
+                <div id="logo" class="col-1 d-flex justify-content-center align-items-center" style="max-width: 100px;">
+                    <img src="imagenes/logo.svg" alt="Logo" class="img-fluid">
+                </div>
+
+                <!-- Buscador ocupa 11 columnas -->
+                <div id="buscador" class="col-11">
+                    <div class="d-flex align-items-center">
+                        <!-- Select de categorías -->
+                        <div class="me-3 flex-grow-1">
+                            <select class="form-select form-select-lg" id="categoria"
+                                aria-label="Seleccionar categoría">
+                                <option value="" selected>Seleccionar categoría</option>
+                                <option value="ropa">Ropa</option>
+                                <option value="electrodomesticos">Electrodomésticos</option>
+                                <option value="juguetes">Juguetes</option>
+                                <option value="libros">Libros</option>
+                            </select>
+                        </div>
+
+                        <!-- Input de búsqueda -->
+                        <div class="me-3 flex-grow-1">
+                            <input type="text" class="form-control form-control-lg" placeholder="Buscar productos..."
+                                id="buscar" aria-label="Buscar producto">
+                        </div>
+
+                        <!-- Botón de búsqueda -->
+                        <button type="submit" class="btn btn-primary ms-2">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tierra Media</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" style="color: red; font-weight: bold;">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html"style="color: red; font-weight: bold;">Blog</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="viajesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Viajes</a>
+                        <ul class="dropdown-menu" aria-labelledby="viajesDropdown">
+                            <li><a class="dropdown-item" href="#">Destinos</a></li>
+                            <li><a class="dropdown-item" href="#">Consejos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="mapaDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Mapa</a>
+                        <ul class="dropdown-menu" aria-labelledby="mapaDropdown">
+                            <li><a class="dropdown-item" href="#">Destinos</a></li>
+                            <li><a class="dropdown-item" href="#">Consejos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="tiendaDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: red; font-weight: bold;">Tienda</a>
+                        <ul class="dropdown-menu" aria-labelledby="tiendaDropdown">
+                            <li><a class="dropdown-item" href="tienda.html" style="color: red; font-weight: bold;">Tienda</a></li>
+                            <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                            <li><a class="dropdown-item" href="#">Categorías</a></li>
+                            <li><a class="dropdown-item" href="#">Destacados</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#"><i
+                                class="material-symbols-rounded">account_circle</i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i
+                                class="material-symbols-rounded">shopping_cart</i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i
+                                class="material-symbols-rounded">translate</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Producto -->
+    <section id="producto-detalle" class="container py-5">
+        <div class="row">
+            <!-- Imagen del producto -->
+            <div class="col-md-6 mb-4">
+                <div class="product-image-container">
+                    <img src="imagenes/espadaelfica.webp" alt="Espada Elfica de Rivendel" class="img-fluid"
+                        id="imagen-producto">
+                    <!-- Opcional: Agregar opción de zoom -->
+                </div>
+            </div>
+
+            <!-- Detalles del producto -->
+            <div class="col-md-6">
+                <h2 class="fw-bold">Espada Elfica de Rivendel</h2>
+                <p class="text-warning fw-bold">5000 Monedas de Mithril</p>
+                <p class="text-muted mb-4">Una espada mágica de alta calidad, forjada por los elfos de Rivendel, ideal
+                    para tu aventura en Tierra Media.</p>
+
+                <h5 class="fw-bold">Descripción</h5>
+                <p>La Espada Elfica de Rivendel es un arma que no solo es funcional, sino que también es una obra
+                    maestra de la forja. Hecha de un acero muy resistente, se dice que fue forjada bajo las estrellas, y
+                    es conocida por su equilibrio y elegancia.</p>
+
+                <h5 class="fw-bold mt-4">Especificaciones</h5>
+                <ul>
+                    <li><strong>Tamaño:</strong> 120 cm</li>
+                    <li><strong>Color:</strong> Plata</li>
+                    <li><strong>Material:</strong> Acero Elfico</li>
+                    <li><strong>Peso:</strong> 3 kg</li>
+                    <li><strong>Incluye:</strong> Fundas y detalles en oro</li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Cantidad</h5>
+                <div class="d-flex align-items-center">
+                    <input type="number" class="form-control" id="cantidad" value="1" min="1" max="10"
+                        style="width: 80px;">
+                    <a href="carrito.html" class="btn btn-danger ms-3">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opiniones de los clientes -->
+    <section id="opiniones" class="container py-5">
+        <h3 class="text-center mb-4">Opiniones de los clientes</h3>
+        <div class="row">
+            <!-- Opinión 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Juan Pérez</h5>
+                        <p class="text-muted">★★★★★</p>
+                        <p>Una espada increíble. La calidad es impresionante y el diseño es muy bonito. La recomiendo al
+                            100%.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Opinión 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Ana Gómez</h5>
+                        <p class="text-muted">★★★★☆</p>
+                        <p>Me encanta, pero el precio es un poco alto. Aún así, vale cada oro gastado.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Opinión 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Carlos López</h5>
+                        <p class="text-muted">★★★★★</p>
+                        <p>Excelente espada, muy ligera y resistente. Ideal para la aventura, ¡no me arrepiento de mi
+                            compra!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Relacionados -->
+    <section id="productos-relacionados" class="container py-5">
+        <h3 class="text-center mb-4">Productos Relacionados</h3>
+        <div class="row g-4 justify-content-center">
+            <!-- Producto Relacionado 1 -->
+            <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                <div class="card shadow-sm h-100 rounded position-relative"
+                    style="aspect-ratio: 2/3; max-width: 250px;">
+                    <!-- Imagen -->
+                    <img src="imagenes/armadura.jpg" class="card-img-top rounded-top" alt="Armadura de Gondor"
+                        style="object-fit: cover; width: 100%; height: 100%;">
+                    <!-- Cuadro de texto con Bootstrap -->
+                    <div
+                        class="card-img-overlay d-flex flex-column justify-content-end bg-black bg-opacity-10 text-white rounded-bottom">
+                        <h5 class="fw-bold text-center mb-1">Armadura de Gondor</h5>
+                        <p class="text-center text-warning fw-bold mb-3">4500 Oros</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-outline-light btn-sm">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto Relacionado 2 -->
+            <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                <div class="card shadow-sm h-100 rounded position-relative"
+                    style="aspect-ratio: 2/3; max-width: 250px;">
+                    <!-- Imagen -->
+                    <img src="imagenes/manto.jpg" class="card-img-top rounded-top" alt="Manto Invisible"
+                        style="object-fit: cover; width: 100%; height: 100%;">
+                    <!-- Cuadro de texto con Bootstrap -->
+                    <div
+                        class="card-img-overlay d-flex flex-column justify-content-end bg-black bg-opacity-10 text-white rounded-bottom">
+                        <h5 class="fw-bold text-center mb-1">Manto Invisible</h5>
+                        <p class="text-center text-warning fw-bold mb-3">8000 Oros</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-outline-light btn-sm">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto Relacionado 3 -->
+            <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                <div class="card shadow-sm h-100 rounded position-relative"
+                    style="aspect-ratio: 2/3; max-width: 230px;">
+                    <!-- Imagen -->
+                    <img src="imagenes/arco.jpg" class="card-img-top rounded-top" alt="Arco de Mirkwood"
+                        style="object-fit: cover; width: 100%; height: 100%;">
+                    <!-- Cuadro de texto con Bootstrap -->
+                    <div
+                        class="card-img-overlay d-flex flex-column justify-content-end bg-black bg-opacity-10 text-white rounded-bottom">
+                        <h5 class="fw-bold text-center mb-1">Arco de Mirkwood</h5>
+                        <p class="text-center text-warning fw-bold mb-3">2200 Oros</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-outline-light btn-sm">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-marron text-crema py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contacto -->
+                <div class="col-md-6 mb-4">
+                    <h2>Contáctanos</h2>
+                    <p>¿Tienes preguntas sobre nuestras aventuras en la Tierra Media? ¡Estamos aquí para ayudarte a
+                        planificar tu travesía!</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Escribe tu mensaje..." rows="4"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                    <div class="mt-3">
+                        <h5>Información de Contacto</h5>
+                        <p>Email: info@tierramediaaventuras.com</p>
+                        <p>Teléfono: +123 456 7890</p>
+                    </div>
+                    <p>&copy; 2024 Tierra Media. Todos los derechos reservados.</p>
+                    <p>
+                        <a href="#" class="text-white">Política de privacidad</a> |
+                        <a href="#" class="text-white">Términos y condiciones</a>
+                    </p>
+                </div>
+
+                <!-- Mapa -->
+                <div class="col-md-6">
+                    <h3>Nuestras Oficinas en Nueva Zelanda</h3>
+                    <p>Visita nuestras oficinas en locaciones inspiradas en la Tierra Media para iniciar tu aventura.
+                    </p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31563.41284989709!2d168.6611577493684!3d-45.03169127301488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d2f3468e495b1%3A0xb9fdf0730c472d3b!2sQueenstown%2C%20New%20Zealand!5e0!3m2!1sen!2s!4v1638479199163!5m2!1sen!2s"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

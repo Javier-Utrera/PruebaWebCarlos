@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Entradas</title>
+</head>
+
+<body class="bg-gray-100 text-black">
+
+    <!-- Header -->
+    <header class="bg-[#E6C47A] text-white py-6 px-4 w-full">
+        <div class="flex items-center justify-between w-full space-x-4">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <img src="/imagenes/logo.svg" alt="Logo Tierra Media" class="w-[70px] h-auto">
+            </div>
+            <!-- Formulario -->
+            <form class="flex flex-col w-full space-y-4 mt-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                <input type="text" placeholder="Destino" class="p-2 rounded bg-white text-black w-full" />
+                <input type="text" placeholder="Fecha" class="p-2 rounded bg-white text-black w-full" />
+                <input type="text" placeholder="Número de personas" class="p-2 rounded bg-white text-black w-full" />
+                <button type="submit" class="p-2 bg-[#4682A3] text-white rounded w-full sm:w-auto">Comenzar viaje</button>
+            </form>            
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-[#4B3D26] text-[#EFEDE8] py-4 px-4 w-full">
+        <div class="flex justify-between items-center w-full">
+          <!-- Enlaces de navegación -->
+          <ul class="flex space-x-8">
+            <li><a href="index.html" class="hover:text-yellow-300" style="color: red; font-weight: bold;">Inicio</a></li>
+            <li><a href="blog.html" class="hover:text-yellow-300" style="color: red; font-weight: bold;">Blog</a></li>
+            <li><a href="#destinos" class="hover:text-yellow-300">Quienes somos</a></li>
+            <li><a href="#paquetes" class="hover:text-yellow-300">Contacto</a></li>
+            <li><a href="tienda.html" class="hover:text-yellow-300" style="color: red; font-weight: bold;">Tienda</a></li>
+          </ul>
+      
+          <!-- Barra de búsqueda -->
+          <div class="ml-4 w-1/2">
+            <input type="search" placeholder="Buscar..." class="w-full p-2 rounded bg-white text-black">
+          </div>
+        </div>
+      </nav>
+
+    <!-- Blog Section -->
+    <section class="bg-gray-100 py-8 px-4">
+        <div class="max-w-6xl mx-auto gap-8">
+            <!-- Últimos Artículos -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Aquí irán los posts -->
+                
+                <article class="bg-white p-4 rounded-lg shadow-lg">
+                    <div class="flex-1 pr-4">
+                        <div class="w-full h-full overflow-hidden rounded-lg">                                               
+                            <img src="/imagenes/blog_articulo_detallado.webp" alt="Imagen destacada" class="w-full h-full object-cover">                       
+                        </div>
+                        <br>
+                        <h2 class="text-4xl font-bold mb-2">La Comarca: Un viaje a la tierra de la paz</h2>
+                        <p class="text-sm text-gray-700 mb-4">
+                            Al noroeste de la Tierra Media, entre verdes colinas y extensos campos, se encuentra un rincón escondido donde la paz y la naturaleza 
+                            florecen: La Comarca, hogar de los hobbits. Este lugar, que parece extraído de un sueño, está lleno de encantadoras casas de puertas 
+                            redondas, caminos serpenteantes y jardines floridos, donde la vida transcurre sin prisa y con una sencillez casi mágica.
+                        </p>
+                        <p class="text-sm text-gray-700 mb-4">
+                            La Comarca no solo es conocida por su belleza natural, sino también por el espíritu amable de sus habitantes, los hobbits, 
+                            quienes valoran la calma, las tradiciones y el placer de una buena comida compartida. Aquí, las estaciones pasan de forma armónica, 
+                            permitiendo que el campo se vista de colores vivos en primavera, de tonos dorados en otoño, y de blancura suave en invierno. 
+                            La naturaleza en La Comarca no solo es un escenario: es parte esencial de la vida cotidiana, brindando los alimentos frescos, 
+                            los árboles que dan sombra y los ríos que susurran.
+                        </p>
+                        <h2 class="text-3xl font-bold mb-2">Un paisaje de ensueño y tradición</h2>
+                        <p class="text-sm text-gray-700 mb-4">
+                            Desde las colinas de Hobbiton hasta las verdes llanuras de Los Gamos, La Comarca está llena de paisajes bucólicos que invitan a la 
+                            contemplación y al descanso. Los viajeros suelen visitar lugares icónicos como Bolsón Cerrado, la casa de Bilbo y Frodo Bolsón, 
+                            construida bajo una colina en perfecta armonía con la naturaleza. Cada rincón parece haber sido diseñado para recordar lo sencillo 
+                            y bello de la vida.
+                        </p>
+                        <p class="text-sm text-gray-700 mb-4">
+                            Además de sus paisajes, la vida en La Comarca está marcada por una serie de festividades y celebraciones en las que todos los 
+                            habitantes participan. No importa si eres un conocido vecino o un viajero curioso: siempre encontrarás una cálida bienvenida, 
+                            una jarra de cerveza espumosa y quizás un pastel de miel recién horneado.
+                        </p>
+                        <h2 class="text-3xl font-bold mb-2">Un escape a un estilo de vida diferente</h2>
+                        <p class="text-sm text-gray-700 mb-4">
+                            Visitar La Comarca es dejar atrás el ajetreo y las preocupaciones. Aquí, el tiempo parece fluir lentamente, permitiéndonos 
+                            desconectar y apreciar las pequeñas alegrías. Es un recordatorio de que, a veces, lo que más necesitamos es un poco de paz, 
+                            buena compañía y la belleza simple de la naturaleza.
+                        </p>
+                        <p class="text-sm text-gray-700 mb-4">
+                            Si deseas experimentar un lugar donde el tiempo no tiene prisa, donde el canto de los pájaros es la música principal y donde 
+                            puedes recordar el valor de la tranquilidad, entonces La Comarca es el destino perfecto para tu próximo viaje interior.
+                        </p>
+
+                    </div>
+                    <div class="text-gray-500 text-xs">
+                        <br>
+                        <p>
+                            Publicado el 
+                            <span class="font-bold">10 de Enero</span> 
+                            por 
+                            <a href="autor.html" class="text-red-500 hover:underline">Gandalf</a> 
+                            Categoria: <a href="URL del destino" target="_blank" class="text-blue-500">Viajes Tranquilos</a></p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-gray-200 py-8 px-4">
+        <div class="max-w-4xl mx-auto space-y-8">
+            <h2 class="text-3xl font-bold mb-4 text-center">Comentarios</h2>
+    
+            <!-- Formulario de Comentarios -->
+            <form class="bg-white p-4 rounded-lg shadow-md space-y-4">
+                <h3 class="text-xl font-semibold mb-2">Deja un comentario</h3>
+                <input type="text" placeholder="Tu nombre" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                <textarea placeholder="Escribe tu comentario aquí..." class="w-full p-2 border rounded h-32 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                <button type="submit" class="w-full p-2 bg-blue-600 text-white rounded hover:bg-blue-700">Enviar comentario</button>
+            </form>
+    
+            <!-- Lista de Comentarios -->
+            <div class="bg-white p-4 rounded-lg shadow-md space-y-4">
+                <h3 class="text-xl font-semibold mb-4">Comentarios recientes</h3>
+                
+                <!-- Comentario Individual -->
+                <div class="border-b pb-4 mb-4">
+                    <p class="font-semibold">Gandalf el Gris</p>
+                    <p class="text-gray-700">"¡Un lugar digno de visitar! La Comarca siempre será un remanso de paz y tranquilidad."</p>
+                    <span class="text-gray-500 text-xs">Publicado el 12 de Octubre</span>
+                </div>
+                
+                <div class="border-b pb-4 mb-4">
+                    <p class="font-semibold">Aragorn</p>
+                    <p class="text-gray-700">"Recomiendo una visita en primavera. Los colores de la Comarca en esa estación son inigualables."</p>
+                    <span class="text-gray-500 text-xs">Publicado el 5 de Septiembre</span>
+                </div>
+    
+                <!-- Agrega más comentarios aquí -->
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-gray-100 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 py-4">
+        <!-- Aquí irán los posts -->
+        
+        <article class="bg-white p-4 rounded-lg shadow-lg flex">
+            <div class="flex-1 pr-4">
+                <h2 class="text-2xl font-bold mb-2">Rivendel: El refugio élfico</h2>
+                <p class="text-sm text-gray-700 mb-4">Un lugar lleno de sabiduría y belleza, donde los Elfos protegen sus secretos más antiguos.</p>
+                <div class="text-gray-500 text-xs">
+                    <p>Publicado el <span class="font-bold">15 de Febrero</span> por <span class="font-bold">Aragorn</span></p>
+                </div>
+                <a href="#" class="text-blue-500 hover:underline">Leer más...</a>
+            </div>
+            <div class="w-32 h-32 overflow-hidden rounded-lg">
+                <img src="/imagenes/blog_rivendell.webp" alt="Imagen destacada" class="w-full h-full object-cover">
+            </div>
+        </article>
+        
+        <article class="bg-white p-4 rounded-lg shadow-lg flex">
+            <div class="flex-1 pr-4">
+                <h2 class="text-2xl font-bold mb-2">Mordor: El reino oscuro</h2>
+                <p class="text-sm text-gray-700 mb-4">Adéntrate en las tierras oscuras de Sauron, un lugar donde el mal crece y se esconde en las sombras.</p>
+                <div class="text-gray-500 text-xs">
+                    <p>Publicado el <span class="font-bold">22 de Marzo</span> por <span class="font-bold">Gollum</span></p>
+                </div>
+                <a href="#" class="text-blue-500 hover:underline">Leer más...</a>
+            </div>
+            <div class="w-32 h-32 overflow-hidden rounded-lg">
+                <img src="/imagenes/blog_mordor.webp" alt="Imagen destacada" class="w-full h-full object-cover">
+            </div>
+        </article>
+        
+        <article class="bg-white p-4 rounded-lg shadow-lg flex">
+            <div class="flex-1 pr-4">
+                <h2 class="text-2xl font-bold mb-2">Gondor: La última línea de defensa</h2>
+                <p class="text-sm text-gray-700 mb-4">Una antigua ciudad que resiste el paso del tiempo, su historia está marcada por la valentía y la lucha.</p>
+                <div class="text-gray-500 text-xs">
+                    <p>Publicado el <span class="font-bold">5 de Abril</span> por <span class="font-bold">Gimli</span></p>
+                </div>
+                <a href="#" class="text-blue-500 hover:underline">Leer más...</a>
+            </div>
+            <div class="w-32 h-32 overflow-hidden rounded-lg">
+                <img src="imagenes/blog_gondor.webp" alt="Imagen destacada" class="w-full h-full object-cover">
+            </div>
+        </article>
+
+    </div>
+    <!-- Footer -->
+    <footer class="bg-[#4B3D26] text-[#EFEDE8] py-6">
+        <div class="max-w-screen-xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Categorías y Etiquetas -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Categorías</h3>
+                <ul>
+                    <li><a href="#" class="hover:text-yellow-500">Viajes</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Aventuras</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Historia</a></li>
+                </ul>
+            </div>
+
+            <!-- Información de Contacto -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Contacto</h3>
+                <p>Email: contacto@tierramedia.com</p>
+                <p>Teléfono: +123 456 789</p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Síguenos</h3>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="hover:text-yellow-500">Facebook</a>
+                    <a href="#" class="hover:text-yellow-500">Instagram</a>
+                    <a href="#" class="hover:text-yellow-500">Twitter</a>
+                </div>
+            </div>
+
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31563.41284989709!2d168.6611577493684!3d-45.03169127301488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d2f3468e495b1%3A0xb9fdf0730c472d3b!2sQueenstown%2C%20New%20Zealand!5e0!3m2!1sen!2s!4v1638479199163!5m2!1sen!2s"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+            
+            <!-- Aviso de Copyright -->
+            <div class="col-span-1 sm:col-span-2 lg:col-span-4 text-center text-sm">
+                <p>&copy; 2024 Tierra Media. Todos los derechos reservados.</p>
+            </div>
+
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

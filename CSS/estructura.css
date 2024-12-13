@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #4A7C30, #2F4F2A);
+}
+
+.cuerpo {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "landing"
+        "section"
+        "footer";
+    grid-template-rows: 160px 50px 500px auto auto;
+}
+
+header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    grid-area: nav;
+    position: sticky;
+    top: 160px;
+    z-index: 100;
+}
+
+section {   
+    padding-top: 30px;
+    grid-area: section;
+    display: grid;
+    gap: 25px;
+    grid-template-areas:
+        "destinos"
+        "servicios"
+        "equipo"
+        "testimonios";
+    grid-template-rows: 800px repeat(3, auto);
+    z-index: 10;
+}
+
+footer {
+    margin-top: 20px;
+    grid-area: footer;
+}

@@ -1,0 +1,45 @@
+/* landing.css */
+.landing {
+    background-image: url(../imagenes/ba.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;   
+}
+.texto-bienvenida {
+    color: #3A2A1A;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.texto-bienvenida h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.texto-bienvenida p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+/*
+Verde Bosque (#4A7C30)
+Texto: Blanco (#FFFFFF)
+
+Marrón Tierra (#8B5B29)
+Texto: Crema (#F5F5DC)
+
+Gris Piedra (#A7A8AA)
+Texto: Negro (#000000)
+
+Dorado Élfico (#E6C47A)
+Texto: Marrón Oscuro (#4B3D26)
+*/
