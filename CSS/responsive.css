@@ -1,6 +1,7 @@
 /* responsive.css */
 @media (max-width: 720px) {
     #buscador {
+        display: grid;
         grid-template:
             "origen destino"
             "viajeros raza"
@@ -13,13 +14,10 @@
         border-bottom-left-radius: 10px;
     }
 
-    #botoncomenzar {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
 
     #logo {
-        background-size: 80%;
+        background-size: 60%;
+        margin: 10px auto;
     }
 
     #botoncomenzar {
@@ -35,6 +33,9 @@
         justify-content: center;
         gap: 5px;
         
+    }
+    .descripciondestino{
+        width: auto;
     }
     .dest img {
         height: 130px;
@@ -62,10 +63,10 @@
 
     #descrcomarca {left: 20px;}   
     #descrrivendell {left: 0px;}    
-    #descrgondor {left: 0px;}   
-    #descrmoria {left: 0px;}   
+    #descrgondor {left: 0px; top: -100px;}   
+    #descrmoria {left: 0px;top: -120px;}   
     #descrmordor {
-        top:-200px;
+        top:-280px;
         left: 0px;
     }
 
